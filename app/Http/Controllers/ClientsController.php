@@ -36,9 +36,9 @@ class ClientsController extends Controller
               ]
             ];
 
-            $this->elasticParams['size'] = 1000;
         }
 
+        $this->elasticParams['size'] = 8000;
         $clients = $this->client->search($this->elasticParams);
 
         return view('clients.index', compact('clients'));

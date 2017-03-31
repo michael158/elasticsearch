@@ -22,7 +22,7 @@ class ClientTypeSeeder extends Seeder
                 'index' => env('ES_INDEX'),
                 'type' => 'clients',
                 'body' => [
-                    'name' => $faker->firstName . ' ' . $faker->lastName,
+                    'name' => 'Paulo Bahia',
                     'cpf' => rand(100,999) . '.' . rand(100,999) . '.' .rand(100,999) . '-' .rand(10,99)
                 ]
             ]);
